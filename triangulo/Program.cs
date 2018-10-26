@@ -4,39 +4,27 @@ namespace triangulo
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            int ladoA;
-            int ladoB;
-            int ladoC;
 
-            string texto;
+            //string texto;
+            Triangulo triangulo = new Triangulo();
 
-            /*
-             * esse mesmo comando abaixo pode ser feito da seguinte forma
-             * Console.WriteLine("Digite qualquer coisa...");
-             * texto = Console.ReadLine();
-             * Console.WriteLine("Foi digitado isso aqui: " texto);
-            */
+            Console.WriteLine("Informe o lado A: ");
+            //triangulo.ladoA = Int32.Parse(Console.ReadLine());
+            triangulo.defineValorLadoA(Int32.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Digite um valor para o lado A: ");
-            ladoA = Int32.Parse(Console.ReadLine());
-            texto = "lado A: " + ladoA;
-            //Console.WriteLine("Valor da variavel texto: " + texto);
+            /*Console.WriteLine("Informe o lado B: ");
+            //triangulo.ladoB = Int32.Parse(Console.ReadLine());
+            triangulo.defineValorLadoB(Int32.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Digite um valor para o lado B: ");
-            ladoB = Int32.Parse(Console.ReadLine());
-            texto += "\nlado B: " + ladoB;
-            //Console.WriteLine("Valor da variavel texto: " + texto);
+            Console.WriteLine("Informe o lado C: ");
+            //triangulo.ladoC = Int32.Parse(Console.ReadLine());
+            triangulo.defineValorLadoC(Int32.Parse(Console.ReadLine()));*/
 
-            Console.WriteLine("Digite um valor para o lado C: ");
-            ladoC = Int32.Parse(Console.ReadLine());
-            texto += "\nlado C: " + ladoC;
-            //Console.WriteLine("Valor da variavel texto: " + texto);
-
-            Console.WriteLine(texto);
-
+            Console.WriteLine("LadoA: " + triangulo.pegaValorLadoA() + "\n");
+            /*Console.WriteLine("LadoB: " + triangulo.ladoB + "\n");
+            Console.WriteLine("LadoC: " + triangulo.ladoC + "\n");*/
 
         }
     }
